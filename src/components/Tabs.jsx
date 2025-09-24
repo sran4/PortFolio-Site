@@ -1,16 +1,15 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const Tabs = ({ tabList, activeTab, onChange }) => {
   const getActiveStyles = (value) => {
     return activeTab === value
       ? "text-white bg-gradient-primary"
-      : "text-secondary bg-transparent";
+      : "text-secondary dark:text-white/80 bg-transparent";
   };
 
   return (
     <div className="flex items-center justify-center my-10">
-      <div className="bg-[#fff6eb] rounded-full flex">
+      <div className="bg-[#fff6eb] dark:bg-[#111] rounded-full flex">
         {tabList.map((tab) => (
           <motion.button
             key={tab.id}
@@ -24,7 +23,6 @@ const Tabs = ({ tabList, activeTab, onChange }) => {
               tab.value
             )} rounded-full px-4 md:px-10 py-[6px] md:py-3`}
             onClick={() => onChange(tab.value)}
-
           >
             {tab.label}
           </motion.button>

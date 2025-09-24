@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-// import LOGO from "../assets/images/logo.png";
+import { useEffect, useState } from "react";
 import { MENU_LINKS } from "../utils/data";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
+  const [theme, setTheme] = useState("light");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -31,19 +31,42 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const stored = localStorage.getItem("theme");
+    // Default to light mode unless user explicitly saved dark
+    if (stored === "dark") {
+      document.documentElement.classList.add("dark");
+      setTheme("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      setTheme("light");
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const next = theme === "dark" ? "light" : "dark";
+    setTheme(next);
+    localStorage.setItem("theme", next);
+    if (next === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  };
+
   return (
     <nav className="container mx-auto sticky top-5 z-10">
-      <div className="flex items-center justify-between rounded-full bg-white/25 border border-[#fee6cc] backdrop-blur-[10px] m-5 p-3 md:p-0">
+      <div className="flex items-center justify-between rounded-full bg-white/25 dark:bg-white/10 border border-[#fee6cc] dark:border-white/10 backdrop-blur-[10px] m-5 p-3 md:p-0">
         {/* Logo - Replaced with "Sran Portfolio" text */}
         <div className="ml-6 -mb-1">
           <span className="text-2xl font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
-            Sran Portfolio
+            I Creates Digital
           </span>
         </div>
 
         {/* Hamburger Icon (Visible only on small screens) */}
         <button
-          className="block md:hidden text-[#333] mr-6 focus:outline-none"
+          className="block md:hidden text-[#333] dark:text-white mr-6 focus:outline-none"
           onClick={toggleMenu}
         >
           <svg
@@ -93,13 +116,25 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Hire Me Button */}
-        <button
-          className="hidden md:block h-12 text-[15px] font-medium text-white bg-gradient-primary 
-                     rounded-full px-9 transition-transform duration-300 ease-in-out hover:scale-105"
-        >
-          Hire Me
-        </button>
+        {/* Theme Toggle + Hire Me */}
+        <div className="flex items-center gap-2 pr-3">
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className="h-10 w-10 rounded-full flex items-center justify-center bg-white/60 dark:bg-white/10 border border-[#fee6cc] dark:border-white/10 text-[#333] dark:text-white hover:scale-105 transition"
+          >
+            {theme === "dark" ? "🌙" : "☀️"}
+          </button>
+          <Link
+            to="contact"
+            smooth
+            spy
+            offset={-80}
+            className="inline-flex items-center justify-center h-12 text-[15px] font-medium text-white bg-gradient-primary rounded-full px-9 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
+          >
+            Hire Me
+          </Link>
+        </div>
       </div>
     </nav>
   );

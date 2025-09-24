@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ABOUT_ME } from "../utils/data";
 import ContactInfoCard from "../components/ContactInfoCard";
 import { IoMdMail } from "react-icons/io";
@@ -13,6 +13,11 @@ const ContactMe = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(""); // "", "success", "error"
+  const [formStartAt, setFormStartAt] = useState(Date.now());
+
+  useEffect(() => {
+    setFormStartAt(Date.now());
+  }, []);
 
   // Handle input changes
   const handleChange = (e) => {
@@ -26,8 +31,22 @@ const ContactMe = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isSubmitting) return;
     setIsSubmitting(true);
     setSubmitStatus("");
+
+    // Anti-spam: honeypot and minimum fill time
+    const honeypotValue = e.target?.company?.value?.trim?.() || "";
+    const timeSinceOpenMs = Date.now() - formStartAt;
+    if (honeypotValue || timeSinceOpenMs < 1500) {
+      // Silently accept without sending to avoid tipping off bots
+      setSubmitStatus("success");
+      setIsSubmitting(false);
+      // Reset visible fields
+      setFormData({ from_name: "", from_email: "", message: "" });
+      e.target.reset?.();
+      return;
+    }
 
     // Debug: Log form data
     console.log("Form data being sent:", formData);
@@ -107,6 +126,15 @@ const ContactMe = () => {
             )}
 
             <form onSubmit={handleSubmit} className="flex flex-col">
+              {/* Honeypot field (hidden from users; bots may fill it) */}
+              <input
+                type="text"
+                name="company"
+                tabIndex="-1"
+                autoComplete="off"
+                className="hidden"
+                aria-hidden="true"
+              />
               <input
                 type="text"
                 name="from_name"

@@ -33,9 +33,9 @@ export const MENU_LINKS = [
 ];
 
 export const STATS = [
-  { id: "01", count: "4", label: `Years of \nExperience` },
+  { id: "01", count: "5+", label: `Years of \nExperience` },
   { id: "02", count: "5", label: `Certifications \nEarned` },
-  { id: "03", count: "50", label: `Projects \nCompleted` },
+  { id: "03", count: "50+", label: `Projects \nCompleted` },
 ];
 
 export const SKILL_TABS = [
@@ -213,12 +213,12 @@ In addition to my software development journey, I bring 20+ years of proven succ
 My journey in web development started with curiosity—how does the web work? Fast forward to today, I've built dynamic applications, collaborated with cross-functional teams, and combined my manufacturing leadership experience with technical expertise to solve real-world industry challenges. I love tackling problems, optimizing user experiences, and bringing creative ideas to life through code.
 
 Let's build something amazing together!`,
-  socialLinks: [
+  socialLink: [
     {
       id: "01",
       label: "GitHub",
       icon: FaGithub,
-      link: "https://github.com/yourusername",
+      link: "https://github.com/sran4?tab=repositories",
     },
   ],
 

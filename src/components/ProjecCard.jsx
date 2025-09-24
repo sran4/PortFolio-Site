@@ -5,7 +5,7 @@ const ProjecCard = ({ imgUrl, title, tags, technologies }) => {
   const displayTags = technologies || tags || [];
 
   return (
-    <div className="h-full bg-white rounded-xl overflow-hidden shadow-md mx-2">
+    <div className="h-full bg-white dark:bg-[#121212] rounded-xl overflow-hidden shadow-md mx-2">
       <img
         src={imgUrl}
         alt={title}
@@ -20,7 +20,7 @@ const ProjecCard = ({ imgUrl, title, tags, technologies }) => {
           {displayTags.map((tag, index) => (
             <span
               key={index}
-              className="text-xs text-secondary bg-orange-100 px-3 py-1 rounded"
+              className="text-xs text-secondary bg-orange-100 dark:bg-[#1e1e1e] px-3 py-1 rounded"
             >
               {tag}
             </span>

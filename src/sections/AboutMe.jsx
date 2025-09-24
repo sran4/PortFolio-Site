@@ -1,5 +1,3 @@
-import React from "react";
-
 // Import the icons we want to use for floating icons
 import {
   FaHtml5,
@@ -94,7 +92,7 @@ const AboutMe = () => {
           </p>
 
           <div className="flex gap-4 mt-6">
-            {ABOUT_ME.socialLinks.map((item) => (
+            {ABOUT_ME.socialLink.map((item) => (
               <a
                 key={item.label}
                 className="cursor-pointer group"
@@ -110,28 +108,34 @@ const AboutMe = () => {
           {/* Contact Information */}
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Email */}
-            <div className="flex items-center gap-3 p-4 bg-white/50 rounded-lg border border-orange-100">
+            <div className="flex items-center gap-3 p-4 bg-white/50 dark:bg-white/10 rounded-lg border border-orange-100 dark:border-white/10">
               <FaEnvelope className="text-primary text-lg" />
               <div>
-                <p className="text-xs text-gray-600">Email</p>
+                <p className="text-xs text-gray-600 dark:text-gray-300">
+                  Email
+                </p>
                 <p className="text-sm font-medium">{ABOUT_ME.email}</p>
               </div>
             </div>
 
             {/* Phone */}
-            <div className="flex items-center gap-3 p-4 bg-white/50 rounded-lg border border-orange-100">
+            <div className="flex items-center gap-3 p-4 bg-white/50 dark:bg-white/10 rounded-lg border border-orange-100 dark:border-white/10">
               <FaPhone className="text-primary text-lg" />
               <div>
-                <p className="text-xs text-gray-600">Phone</p>
+                <p className="text-xs text-gray-600 dark:text-gray-300">
+                  Phone
+                </p>
                 <p className="text-sm font-medium">{ABOUT_ME.phone}</p>
               </div>
             </div>
 
             {/* Location */}
-            <div className="flex items-center gap-3 p-4 bg-white/50 rounded-lg border border-orange-100">
+            <div className="flex items-center gap-3 p-4 bg-white/50 dark:bg-white/10 rounded-lg border border-orange-100 dark:border-white/10">
               <FaLocationArrow className="text-primary text-lg" />
               <div>
-                <p className="text-xs text-gray-600">Location</p>
+                <p className="text-xs text-gray-600 dark:text-gray-300">
+                  Location
+                </p>
                 <p className="text-sm font-medium">{ABOUT_ME.location}</p>
               </div>
             </div>
