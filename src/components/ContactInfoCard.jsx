@@ -5,9 +5,7 @@ const ContactInfoCard = ({ icon, text }) => {
         {icon}
       </div>
 
-      <p className="text-secondary dark:text-white/80 text-xs md:text-sm">
-        {text}
-      </p>
+      <p className="text-secondary text-xs md:text-sm">{text}</p>
     </div>
   );
 };
