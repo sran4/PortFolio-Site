@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* Logo - Replaced with "Sran Portfolio" text */}
         <div className="ml-6 -mb-1">
           <span className="text-2xl font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
-            I Creates Digital
+            Creates Digital
           </span>
         </div>
 

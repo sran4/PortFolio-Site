@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { ABOUT_ME } from "../utils/data";
 import ContactInfoCard from "../components/ContactInfoCard";
-import { IoMdMail } from "react-icons/io";
-import { IoPhonePortraitOutline } from "react-icons/io5";
+import {
+  ObfuscatedEmail,
+  ObfuscatedPhone,
+} from "../components/ObfuscatedContact";
 import { MdOutlineWeb } from "react-icons/md";
 
 const ContactMe = () => {
@@ -98,11 +100,8 @@ const ContactMe = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 mt-16">
           <div>
-            <ContactInfoCard icon={<IoMdMail />} text={ABOUT_ME.email} />
-            <ContactInfoCard
-              icon={<IoPhonePortraitOutline />}
-              text={ABOUT_ME.phone}
-            />
+            <ObfuscatedEmail />
+            <ObfuscatedPhone />
             <ContactInfoCard icon={<MdOutlineWeb />} text={ABOUT_ME.location} />
           </div>
 
@@ -113,13 +112,13 @@ const ContactMe = () => {
 
             {/* Status Messages */}
             {submitStatus === "success" && (
-              <div className="mb-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded">
+              <div className="mb-4 p-3 bg-green-100 dark:bg-green-900/30 border border-green-400 dark:border-green-500 text-green-700 dark:text-green-300 rounded">
                 ✅ Message sent successfully! I'll get back to you soon.
               </div>
             )}
 
             {submitStatus === "error" && (
-              <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
+              <div className="mb-4 p-3 bg-red-100 dark:bg-red-900/30 border border-red-400 dark:border-red-500 text-red-700 dark:text-red-300 rounded">
                 ❌ Failed to send message. Please try again or contact me
                 directly.
               </div>

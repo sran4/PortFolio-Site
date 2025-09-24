@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import Hero from "./sections/Hero";
 import TechnicalProficiency from "./sections/TechnicalProficiency";
 import AboutMe from "./sections/AboutMe";
@@ -16,6 +17,7 @@ const App = () => {
       <MyProjects />
       <ContactMe />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
