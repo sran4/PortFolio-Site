@@ -20,7 +20,7 @@ import {
 import { FaGitAlt } from "react-icons/fa6";
 import { MdGroups3 } from "react-icons/md";
 
-import PROJECT_IMG_1 from "../assets/images/project-1.png";
+import PROJECT_IMG_1 from "../assets/projectsImgs/inv-analytic.png";
 import PROJECT_IMG_2 from "../assets/images/project-2.png";
 import PROJECT_IMG_3 from "../assets/images/project-3.png";
 import PROJECT_IMG_4 from "../assets/images/project-4.png";
@@ -283,13 +283,25 @@ export const PROJECTS = [
   {
     id: 1,
     title:
-      "Full Stack Notes App using MERN | MongoDB, Express, React JS, Node JS",
+      "Professional Invoice Management System | Next.js 15, TypeScript, MongoDB",
     description:
-      "Developed a full-stack note-taking application using the MERN stack. Implemented user authentication, CRUD operations for notes, and responsive design. Features include real-time updates, search functionality, and category organization.",
+      "A comprehensive invoice management application built with Next.js 15 and TypeScript. Features 5 beautiful invoice templates, auto-calculations for taxes and discounts, real-time dashboard with business metrics, and complete invoice lifecycle management. Includes user authentication, template preview, and status tracking for draft, sent, paid, and overdue invoices.",
     image: PROJECT_IMG_1,
-    githubUrl: "https://github.com/yourusername/notes-app",
+    githubUrl: "https://github.com/sran4/invoice-manager",
     liveUrl: "https://yournotesapp.com",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "JWT"],
+    technologies: [
+      "Next.js 15",
+      "React 18",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Framer Motion",
+      "MongoDB Atlas",
+      "Mongoose",
+      "NextAuth.js",
+      "Lucide React",
+      "Sonner",
+    ],
   },
   {
     id: 2,

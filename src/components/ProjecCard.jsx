@@ -1,4 +1,11 @@
-const ProjecCard = ({ imgUrl, title, tags, technologies }) => {
+const ProjecCard = ({
+  imgUrl,
+  title,
+  tags,
+  technologies,
+  githubUrl,
+  liveUrl,
+}) => {
   // Use technologies if available, otherwise fall back to tags, or empty array
   const displayTags = technologies || tags || [];
 
@@ -23,6 +30,28 @@ const ProjecCard = ({ imgUrl, title, tags, technologies }) => {
               {tag}
             </span>
           ))}
+        </div>
+        <div className="flex items-center gap-3 mt-4">
+          {githubUrl && (
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-medium text-white bg-gradient-primary px-3 py-2 rounded"
+            >
+              View Code
+            </a>
+          )}
+          {liveUrl && (
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-medium text-secondary border border-orange-200 dark:border-white/10 px-3 py-2 rounded"
+            >
+              Live Demo
+            </a>
+          )}
         </div>
       </div>
     </div>

@@ -47,6 +47,8 @@ const MyProjects = () => {
                     key={project.id}
                     imgUrl={project.image}
                     title={project.title}
+                    githubUrl={project.githubUrl}
+                    liveUrl={project.liveUrl}
                     technologies={project.technologies}
                   />
                 </div>
