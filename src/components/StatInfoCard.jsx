@@ -1,5 +1,3 @@
-import React from "react";
-
 const StatInfoCard = ({ count, label }) => {
   return (
     <div className="flex-1 flex gap-3 md:gap-5 bg-gradient-to-b from-[#fcf4ec] to-[#ffffff] dark:from-gray-800 dark:to-gray-700 rounded-[14px] p-5">

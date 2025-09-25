@@ -1,4 +1,3 @@
-import React from "react";
 import { IoMdMail } from "react-icons/io";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 

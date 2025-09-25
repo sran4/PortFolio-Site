@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProjecCard = ({ imgUrl, title, tags, technologies }) => {
   // Use technologies if available, otherwise fall back to tags, or empty array
   const displayTags = technologies || tags || [];
