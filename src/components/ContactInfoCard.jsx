@@ -5,7 +5,7 @@ const ContactInfoCard = ({ icon, text }) => {
         {icon}
       </div>
 
-      <p className="text-secondary text-xs md:text-sm">{text}</p>
+      <p className="text-secondary text-xs sm:text-sm break-words">{text}</p>
     </div>
   );
 };

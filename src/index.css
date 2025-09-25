@@ -119,3 +119,11 @@
 .bg-gradient-radial {
   background: radial-gradient(circle, var(--tw-gradient-stops));
 }
+
+/* Email wrapping utility */
+.email-wrap {
+  word-break: break-all !important;
+  overflow-wrap: anywhere !important;
+  hyphens: auto;
+  max-width: 100%;
+}

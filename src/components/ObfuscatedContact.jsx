@@ -8,7 +8,7 @@ const ObfuscatedEmail = () => {
       <div className="w-10 h-10 text-xl text-white flex items-center justify-center bg-gradient-primary rounded-lg">
         <IoMdMail />
       </div>
-      <div className="text-secondary text-xs md:text-sm">
+      <div className="text-secondary text-xs sm:text-sm break-words">
         <span>sransatwant</span>
         <span className="hidden">not-email</span>
         <span>@</span>
@@ -25,7 +25,7 @@ const ObfuscatedPhone = () => {
       <div className="w-10 h-10 text-xl text-white flex items-center justify-center bg-gradient-primary rounded-lg">
         <IoPhonePortraitOutline />
       </div>
-      <div className="text-secondary text-xs md:text-sm">
+      <div className="text-secondary text-xs sm:text-sm">
         <span>(408) 561-0966</span>
         <span className="hidden">not-phone</span>
       </div>

@@ -7,6 +7,9 @@ import {
   SiWebpack,
   SiDjango,
   SiPostgresql,
+  SiTailwindcss,
+  SiPostman,
+  SiNextdotjs,
 } from "react-icons/si";
 import {
   VscVscode,
@@ -14,7 +17,7 @@ import {
   VscTerminalPowershell,
   VscEdit,
 } from "react-icons/vsc";
-import { FaGitAlt, FaXTwitter, FaDribbble } from "react-icons/fa6";
+import { FaGitAlt } from "react-icons/fa6";
 import { MdGroups3 } from "react-icons/md";
 
 import PROJECT_IMG_1 from "../assets/images/project-1.png";
@@ -47,6 +50,7 @@ export const SKILL_TABS = [
 ];
 
 export const SKILLS = [
+  // 1. React
   {
     id: "01",
     icon: FaReact,
@@ -56,8 +60,39 @@ export const SKILLS = [
     description:
       "Experienced in building scalable, component-driven web applications using React.js. Proficient in state management, hooks, and integrating third-party libraries for enhanced functionality.",
   },
+  // 2. JavaScript
   {
     id: "02",
+    icon: BiLogoJavascript,
+    skill: "JavaScript",
+    progress: 85,
+    type: "frontend",
+    description:
+      "Skilled in writing clean, modular, and efficient JavaScript code to create interactive web functionalities. Well-versed in ES6+ features, DOM manipulation, and asynchronous programming",
+  },
+  // 3. Next.js
+  {
+    id: "03",
+    icon: SiNextdotjs,
+    skill: "Next.js",
+    progress: 75,
+    type: "frontend",
+    description:
+      "Experienced in building full-stack React applications with Next.js. Proficient in server-side rendering, static site generation, API routes, and optimizing performance for modern web applications.",
+  },
+  // 4. Tailwind CSS
+  {
+    id: "04",
+    icon: SiTailwindcss,
+    skill: "Tailwind CSS",
+    progress: 90,
+    type: "frontend",
+    description:
+      "Proficient in utility-first CSS framework for rapid UI development. Experienced in creating responsive, modern designs with Tailwind's comprehensive design system and custom configurations.",
+  },
+  // 5. HTML
+  {
+    id: "05",
     icon: FaHtml5,
     skill: "HTML",
     progress: 99,
@@ -65,8 +100,9 @@ export const SKILLS = [
     description:
       "Expert in structuring web content with semantic HTML, ensuring accessibility and SEO optimization. Skilled at creating clean and maintainable markup for modern web applications.",
   },
+  // 6. CSS
   {
-    id: "03",
+    id: "06",
     icon: FaCss3,
     skill: "CSS",
     progress: 65,
@@ -74,36 +110,68 @@ export const SKILLS = [
     description:
       "Proficient in designing visually appealing and responsive layouts using CSS and pre-processors like SCSS. Experienced in implementing animations, transitions, and custom designs with precision.",
   },
-  {
-    id: "04",
-    icon: BiLogoJavascript,
-    skill: "JavaScript",
-    progress: 88,
-    type: "frontend",
-    description:
-      "Skilled in writing clean, modular, and efficient JavaScript code to create interactive web functionalities. Well-versed in ES6+ features, DOM manipulation, and asynchronous programming",
-  },
 
+  // 7. Python Django
   {
-    id: "05",
+    id: "07",
+    icon: SiDjango,
+    skill: "Python Django",
+    progress: 75,
+    type: "backend",
+    description:
+      "Experienced in building robust web applications using Python Django framework. Proficient in creating RESTful APIs, handling authentication, and implementing MVC architecture for scalable backend solutions.",
+  },
+  // 8. Visual Studio Code
+  {
+    id: "08",
+    icon: VscVscode,
+    skill: "Visual Studio Code",
+    progress: 95,
+    type: "tools",
+    description:
+      "Well-versed in using Visual Studio Code with custom extensions and debugging tools for a smooth development workflow. Optimized for productivity with shortcuts and automation.",
+  },
+  // 9. Cursor
+  {
+    id: "09",
+    icon: VscEdit,
+    skill: "Cursor",
+    progress: 85,
+    type: "tools",
+    description:
+      "Proficient in using Cursor AI-powered code editor for enhanced development productivity. Skilled in leveraging AI assistance for code generation, debugging, and refactoring to accelerate development workflows.",
+  },
+  // 10. GitHub
+  {
+    id: "10",
+    icon: FaGitAlt,
+    skill: "Git & GitHub",
+    progress: 75,
+    type: "tools",
+    description:
+      "Experienced in version control and collaborative development using Git and GitHub. Proficient in branching strategies, pull requests, and maintaining clean commit histories.",
+  },
+  // Rest in any order
+  {
+    id: "11",
     icon: FaNodeJs,
     skill: "Node.js",
-    progress: 95,
+    progress: 81,
     type: "backend",
     description:
       "Skilled in building scalable and high-performance server-side applications using Node.js. Experienced in handling asynchronous operations, event-driven programming, and optimizing API performance.",
   },
   {
-    id: "06",
+    id: "12",
     icon: SiExpress,
     skill: "Express.js",
-    progress: 98,
+    progress: 79,
     type: "backend",
     description:
       "Proficient in developing RESTful APIs and middleware using Express.js. Focused on creating secure, efficient, and maintainable backend architectures for web applications.",
   },
   {
-    id: "07",
+    id: "13",
     icon: SiMongodb,
     skill: "MongoDB",
     progress: 75,
@@ -112,53 +180,26 @@ export const SKILLS = [
       "Experienced in designing and managing NoSQL databases using MongoDB. Skilled in schema design, aggregation pipelines, and optimizing queries for performance and scalability.",
   },
   {
-    id: "08",
+    id: "14",
     icon: SiMysql,
     skill: "SQL",
-    progress: 90,
+    progress: 75,
     type: "backend",
     description:
       "Proficient in working with relational databases using SQL. Experienced in writing complex queries, optimizing database performance, and ensuring data integrity through normalization and indexing.",
   },
   {
-    id: "09",
-    icon: SiDjango,
-    skill: "Python Django",
-    progress: 75,
-    type: "backend",
-    description:
-      "Experienced in building robust web applications using Python Django framework. Proficient in creating RESTful APIs, handling authentication, and implementing MVC architecture for scalable backend solutions.",
-  },
-  {
-    id: "10",
+    id: "15",
     icon: SiPostgresql,
     skill: "PostgreSQL",
-    progress: 85,
+    progress: 76,
     type: "backend",
     description:
       "Proficient in PostgreSQL database management and optimization. Experienced in advanced SQL queries, indexing strategies, and database design for high-performance applications.",
   },
 
   {
-    id: "11",
-    icon: FaGitAlt,
-    skill: "Git & GitHub",
-    progress: 75,
-    type: "tools",
-    description:
-      "Experienced in version control and collaborative development using Git and GitHub. Proficient in branching strategies, pull requests, and maintaining clean commit histories.",
-  },
-  {
-    id: "12",
-    icon: VscVscode,
-    skill: "Visual Studio Code",
-    progress: 95,
-    type: "tools",
-    description:
-      "Well-versed in using Visual Studio Code with custom extensions and debugging tools for a smooth development workflow. Optimized for productivity with shortcuts and automation.",
-  },
-  {
-    id: "13",
+    id: "16",
     icon: SiWebpack,
     skill: "Webpack",
     progress: 70,
@@ -167,17 +208,17 @@ export const SKILLS = [
       "Skilled in optimizing frontend performance with Webpack, including asset bundling and code splitting. Ensures efficient loading times and modular code structures.",
   },
   {
-    id: "14",
-    icon: VscEdit,
-    skill: "Cursor",
+    id: "17",
+    icon: SiPostman,
+    skill: "Postman",
     progress: 85,
     type: "tools",
     description:
-      "Proficient in using Cursor AI-powered code editor for enhanced development productivity. Skilled in leveraging AI assistance for code generation, debugging, and refactoring to accelerate development workflows.",
+      "Proficient in API testing and development using Postman. Experienced in creating comprehensive API test suites, documenting endpoints, and automating API workflows for efficient backend development.",
   },
 
   {
-    id: "15",
+    id: "18",
     icon: VscCommentUnresolved,
     skill: "Problem-Solving",
     progress: 85,
@@ -186,7 +227,7 @@ export const SKILLS = [
       "Strong analytical skills to identify and resolve technical challenges efficiently. Approaches problems with a structured and logical mindset to deliver effective solutions.",
   },
   {
-    id: "16",
+    id: "19",
     icon: MdGroups3,
     skill: "Collaboration",
     progress: 70,
@@ -195,7 +236,7 @@ export const SKILLS = [
       "Experienced in working within teams, contributing ideas, and integrating feedback. Effective communication ensures smooth project execution and shared success.",
   },
   {
-    id: "17",
+    id: "20",
     icon: VscTerminalPowershell,
     skill: "Attention to Detail",
     progress: 83,

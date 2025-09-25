@@ -14,7 +14,6 @@ import {
   SiNextdotjs,
   SiTailwindcss,
 } from "react-icons/si";
-import { VscEdit } from "react-icons/vsc";
 import { ABOUT_ME } from "../utils/data";
 
 const AboutMe = () => {
@@ -124,22 +123,41 @@ const AboutMe = () => {
             {ABOUT_ME.content}
           </p>
 
-          <div className="flex gap-4 mt-6">
-            {ABOUT_ME.socialLink.map((item) => (
-              <a
-                key={item.label}
-                className="cursor-pointer group"
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <item.icon className="text-2xl text-secondary transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 group-hover:translate-y-[-2px] group-hover:text-primary" />
-              </a>
-            ))}
+          <div className="flex flex-wrap gap-4 mt-6">
+            {ABOUT_ME.socialLink.map((item) => {
+              // Special handling for GitHub - create a button instead of just an icon
+              if (item.label === "GitHub") {
+                return (
+                  <a
+                    key={item.label}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-primary text-white rounded-full text-sm font-medium hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl"
+                  >
+                    <item.icon className="text-lg" />
+                    Visit GitHub
+                  </a>
+                );
+              }
+
+              // Regular icon links for other social media
+              return (
+                <a
+                  key={item.label}
+                  className="cursor-pointer group"
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <item.icon className="text-2xl text-secondary transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 group-hover:translate-y-[-2px] group-hover:text-primary" />
+                </a>
+              );
+            })}
           </div>
 
           {/* Contact Information */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="mt-8 grid grid-cols-1 xl:grid-cols-3 gap-4">
             {/* Email */}
             <div className="flex items-center gap-3 p-4 bg-white/50 dark:bg-white/10 rounded-lg border border-orange-100 dark:border-white/10">
               <FaEnvelope className="text-primary text-lg" />
@@ -147,7 +165,9 @@ const AboutMe = () => {
                 <p className="text-xs text-gray-600 dark:text-gray-300">
                   Email
                 </p>
-                <p className="text-sm font-medium">{ABOUT_ME.email}</p>
+                <p className="text-xs sm:text-sm font-medium break-words">
+                  {ABOUT_ME.email}
+                </p>
               </div>
             </div>
 
@@ -158,7 +178,9 @@ const AboutMe = () => {
                 <p className="text-xs text-gray-600 dark:text-gray-300">
                   Phone
                 </p>
-                <p className="text-sm font-medium">{ABOUT_ME.phone}</p>
+                <p className="text-xs sm:text-sm font-medium">
+                  {ABOUT_ME.phone}
+                </p>
               </div>
             </div>
 
@@ -169,7 +191,9 @@ const AboutMe = () => {
                 <p className="text-xs text-gray-600 dark:text-gray-300">
                   Location
                 </p>
-                <p className="text-sm font-medium">{ABOUT_ME.location}</p>
+                <p className="text-xs sm:text-sm font-medium">
+                  {ABOUT_ME.location}
+                </p>
               </div>
             </div>
           </div>
