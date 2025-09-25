@@ -92,9 +92,9 @@ const ContactMe = () => {
           <h4 className="section-title">Contact Me</h4>
 
           <p className="text-sm text-center mt-4 leading-6">
-            A versatile developer with hands-on expertise in modern
-            technologies, tools, and frameworks, dedicated to building
-            efficient, scalable, and user-centric solutions.
+            Full-stack problem solver with strong expertise in modern
+            technologies and frameworks, passionate about crafting scalable,
+            efficient, and seamless digital experiences.
           </p>
         </div>
 

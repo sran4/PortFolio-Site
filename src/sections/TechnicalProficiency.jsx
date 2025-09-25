@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { SKILL_TABS, SKILLS } from "../utils/data";
 import Tabs from "../components/Tabs";
 import SkillCard from "../components/SkillCard";
@@ -28,9 +28,9 @@ const TechnicalProficiency = () => {
           <h4 className="section-title">Technical Proficiency</h4>
 
           <p className="text-sm text-center mt-4 leading-6">
-            A versatile developer with hands-on expertise in modern
-            technologies, tools, and frameworks, dedicated to building
-            efficient, scalable, and user-centric solutions.
+            A versatile developer with practical expertise in modern
+            technologies, frameworks, and tools, committed to building
+            efficient, scalable, and user-focused solutions.
           </p>
         </div>
 
