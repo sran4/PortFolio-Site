@@ -110,50 +110,9 @@ export const SKILLS = [
     description:
       "Proficient in designing visually appealing and responsive layouts using CSS and pre-processors like SCSS. Experienced in implementing animations, transitions, and custom designs with precision.",
   },
-
-  // 7. Python Django
+  // 07 Node JS
   {
     id: "07",
-    icon: SiDjango,
-    skill: "Python Django",
-    progress: 75,
-    type: "backend",
-    description:
-      "Experienced in building robust web applications using Python Django framework. Proficient in creating RESTful APIs, handling authentication, and implementing MVC architecture for scalable backend solutions.",
-  },
-  // 8. Visual Studio Code
-  {
-    id: "08",
-    icon: VscVscode,
-    skill: "Visual Studio Code",
-    progress: 95,
-    type: "tools",
-    description:
-      "Well-versed in using Visual Studio Code with custom extensions and debugging tools for a smooth development workflow. Optimized for productivity with shortcuts and automation.",
-  },
-  // 9. Cursor
-  {
-    id: "09",
-    icon: VscEdit,
-    skill: "Cursor",
-    progress: 85,
-    type: "tools",
-    description:
-      "Proficient in using Cursor AI-powered code editor for enhanced development productivity. Skilled in leveraging AI assistance for code generation, debugging, and refactoring to accelerate development workflows.",
-  },
-  // 10. GitHub
-  {
-    id: "10",
-    icon: FaGitAlt,
-    skill: "Git & GitHub",
-    progress: 75,
-    type: "tools",
-    description:
-      "Experienced in version control and collaborative development using Git and GitHub. Proficient in branching strategies, pull requests, and maintaining clean commit histories.",
-  },
-  // Rest in any order
-  {
-    id: "11",
     icon: FaNodeJs,
     skill: "Node.js",
     progress: 81,
@@ -161,8 +120,9 @@ export const SKILLS = [
     description:
       "Skilled in building scalable and high-performance server-side applications using Node.js. Experienced in handling asynchronous operations, event-driven programming, and optimizing API performance.",
   },
+  // 08. Express.js
   {
-    id: "12",
+    id: "08",
     icon: SiExpress,
     skill: "Express.js",
     progress: 79,
@@ -170,8 +130,9 @@ export const SKILLS = [
     description:
       "Proficient in developing RESTful APIs and middleware using Express.js. Focused on creating secure, efficient, and maintainable backend architectures for web applications.",
   },
+  // 09. MongoDB
   {
-    id: "13",
+    id: "09",
     icon: SiMongodb,
     skill: "MongoDB",
     progress: 75,
@@ -179,6 +140,50 @@ export const SKILLS = [
     description:
       "Experienced in designing and managing NoSQL databases using MongoDB. Skilled in schema design, aggregation pipelines, and optimizing queries for performance and scalability.",
   },
+
+  // 10. Python Django
+  {
+    id: "10",
+    icon: SiDjango,
+    skill: "Python Django",
+    progress: 75,
+    type: "backend",
+    description:
+      "Experienced in building robust web applications using Python Django framework. Proficient in creating RESTful APIs, handling authentication, and implementing MVC architecture for scalable backend solutions.",
+  },
+  // 11. Cursor
+  {
+    id: "11",
+    icon: VscEdit,
+    skill: "Cursor",
+    progress: 85,
+    type: "tools",
+    description:
+      "Proficient in using Cursor AI-powered code editor for enhanced development productivity. Skilled in leveraging AI assistance for code generation, debugging, and refactoring to accelerate development workflows.",
+  },
+  // 12. Visual Studio Code
+  {
+    id: "12",
+    icon: VscVscode,
+    skill: "Visual Studio Code",
+    progress: 95,
+    type: "tools",
+    description:
+      "Well-versed in using Visual Studio Code with custom extensions and debugging tools for a smooth development workflow. Optimized for productivity with shortcuts and automation.",
+  },
+
+  // 13. GitHub
+  {
+    id: "13",
+    icon: FaGitAlt,
+    skill: "Git & GitHub",
+    progress: 75,
+    type: "tools",
+    description:
+      "Experienced in version control and collaborative development using Git and GitHub. Proficient in branching strategies, pull requests, and maintaining clean commit histories.",
+  },
+  // 14. SQL
+
   {
     id: "14",
     icon: SiMysql,
@@ -188,6 +193,7 @@ export const SKILLS = [
     description:
       "Proficient in working with relational databases using SQL. Experienced in writing complex queries, optimizing database performance, and ensuring data integrity through normalization and indexing.",
   },
+  // 15. PostgreSQL
   {
     id: "15",
     icon: SiPostgresql,
@@ -197,6 +203,7 @@ export const SKILLS = [
     description:
       "Proficient in PostgreSQL database management and optimization. Experienced in advanced SQL queries, indexing strategies, and database design for high-performance applications.",
   },
+  // 16. Webpack
 
   {
     id: "16",
@@ -207,6 +214,7 @@ export const SKILLS = [
     description:
       "Skilled in optimizing frontend performance with Webpack, including asset bundling and code splitting. Ensures efficient loading times and modular code structures.",
   },
+  // 17. Postman
   {
     id: "17",
     icon: SiPostman,
@@ -217,6 +225,7 @@ export const SKILLS = [
       "Proficient in API testing and development using Postman. Experienced in creating comprehensive API test suites, documenting endpoints, and automating API workflows for efficient backend development.",
   },
 
+  // 18. Problem-Solving
   {
     id: "18",
     icon: VscCommentUnresolved,
@@ -226,6 +235,7 @@ export const SKILLS = [
     description:
       "Strong analytical skills to identify and resolve technical challenges efficiently. Approaches problems with a structured and logical mindset to deliver effective solutions.",
   },
+  // 19. Collaboration
   {
     id: "19",
     icon: MdGroups3,
@@ -235,6 +245,7 @@ export const SKILLS = [
     description:
       "Experienced in working within teams, contributing ideas, and integrating feedback. Effective communication ensures smooth project execution and shared success.",
   },
+  // 20. Attention to Detail
   {
     id: "20",
     icon: VscTerminalPowershell,
