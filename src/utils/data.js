@@ -21,11 +21,11 @@ import { FaGitAlt } from "react-icons/fa6";
 import { MdGroups3 } from "react-icons/md";
 
 import PROJECT_IMG_1 from "../assets/projectsImgs/inv-analytic.png";
-import PROJECT_IMG_2 from "../assets/images/project-2.png";
-import PROJECT_IMG_3 from "../assets/images/project-3.png";
-import PROJECT_IMG_4 from "../assets/images/project-4.png";
-import PROJECT_IMG_5 from "../assets/images/project-5.png";
-import PROJECT_IMG_6 from "../assets/images/project-6.png";
+import PROJECT_IMG_2 from "../assets/projectsImgs/nextCart.png";
+import PROJECT_IMG_3 from "../assets/projectsImgs/inv-dashboard.png";
+import PROJECT_IMG_4 from "../assets/projectsImgs/bomCalc.png";
+import PROJECT_IMG_5 from "../assets/projectsImgs/MPICreator.png";
+import PROJECT_IMG_6 from "../assets/projectsImgs/portfolio.png";
 
 export const MENU_LINKS = [
   { id: "01", label: "Home", offset: -100, to: "hero" },
@@ -287,8 +287,8 @@ export const PROJECTS = [
     description:
       "A comprehensive invoice management application built with Next.js 15 and TypeScript. Features 5 beautiful invoice templates, auto-calculations for taxes and discounts, real-time dashboard with business metrics, and complete invoice lifecycle management. Includes user authentication, template preview, and status tracking for draft, sent, paid, and overdue invoices.",
     image: PROJECT_IMG_1,
-    githubUrl: "https://github.com/sran4/invoice-manager",
-    liveUrl: "https://yournotesapp.com",
+    githubUrl: "https://github.com/sran4/invoice-management-system",
+    liveUrl: "https://invoice-management-system-seven.vercel.app/",
     technologies: [
       "Next.js 15",
       "React 18",
@@ -301,6 +301,8 @@ export const PROJECTS = [
       "NextAuth.js",
       "Lucide React",
       "Sonner",
+      "Pdfjs",
+      "Chart.js",
     ],
   },
   {
@@ -309,9 +311,20 @@ export const PROJECTS = [
     description:
       "Built a complete e-commerce solution with user authentication, product catalog, shopping cart, and payment integration. Implemented admin dashboard for inventory management and order processing.",
     image: PROJECT_IMG_2,
-    githubUrl: "https://github.com/yourusername/ecommerce",
-    liveUrl: "https://yourecommerce.com",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
+    githubUrl: "https://github.com/sran4/gocart_full_stack",
+    liveUrl: "https://gocart-full-stack-rjei.vercel.app/",
+    technologies: [
+      "React",
+      "openai",
+      "redux-toolkit",
+      "stripe",
+      "clerk",
+      "neondatabase",
+      "Node.js",
+      "MongoDB",
+      "Stripe",
+      "Redux",
+    ],
   },
   {
     id: 3,
@@ -325,32 +338,63 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    title: "Weather App with API Integration",
+    title: "PCBA Quote System | Next.js 14, TypeScript, PDF Export",
     description:
-      "Developed a responsive weather application with location-based forecasts, 7-day predictions, and interactive maps. Integrated multiple weather APIs for accurate data and implemented caching for better performance.",
+      "A comprehensive PCB Assembly (PCBA) quote generation system featuring multi-step quote generation, component-based pricing for Passives, BGAs, QFNs, and Hand Solder components. Includes tiered pricing system with 9 pricing tiers, delivery options from 1-day to 2-week standard, NRE cost calculations, and professional PDF export. Features unique quote number generation, local data persistence, and modern dark theme UI optimized for manufacturing workflows.",
     image: PROJECT_IMG_4,
-    githubUrl: "https://github.com/yourusername/weather-app",
-    liveUrl: "https://yourweatherapp.com",
-    technologies: ["React", "Weather API", "Chart.js", "Geolocation"],
+    githubUrl: "https://github.com/sran4/PCBA_Quote",
+    liveUrl: "https://pcbaquotesystem.com",
+    technologies: [
+      "Next.js 14",
+      "React 18",
+      "TypeScript",
+      "Tailwind CSS",
+      "PDF Export",
+      "Local Storage",
+    ],
   },
   {
     id: 5,
-    title: "Social Media Dashboard",
+    title: "MPI Creator | Manufacturing Process Instructions Management System",
     description:
-      "Built a comprehensive social media management dashboard with analytics, post scheduling, and engagement tracking. Features include multi-platform integration, content calendar, and performance metrics.",
+      "A comprehensive manufacturing process instruction (MPI) management system built for the PCBA industry. Features real-time collaboration, drag-and-drop interface, version control, and audit trails. Includes role-based access control, JWT authentication, print preview, and professional document export capabilities. Engineers can create, edit, and manage MPIs with a global step library and automatic versioning.",
     image: PROJECT_IMG_5,
-    githubUrl: "https://github.com/yourusername/social-dashboard",
-    liveUrl: "https://yoursocialdashboard.com",
-    technologies: ["React", "Node.js", "PostgreSQL", "Chart.js"],
+    githubUrl: "https://github.com/sran4/MPI_Creator",
+    liveUrl: "https://mpi-creator.vercel.app/",
+    technologies: [
+      "Next.js 14",
+      "React",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "MongoDB Atlas",
+      "Mongoose",
+      "JWT Authentication",
+      "Radix UI",
+      "Lucide React",
+      "Framer Motion",
+      "File Saver",
+      "React Beautiful DND",
+      "Cloudinary",
+      "TinyMCE",
+    ],
   },
   {
     id: 6,
-    title: "Portfolio Website",
+    title: "Modern Portfolio Website | React 18, Vite, Tailwind CSS",
     description:
-      "Designed and developed a responsive portfolio website showcasing projects, skills, and experience. Features include smooth animations, contact form, and SEO optimization. Built with modern web technologies.",
+      "A fully responsive portfolio website featuring dark/light mode toggle, smooth scroll navigation, animated hero section with floating tech icons, projects carousel with touch support, and contact form with EmailJS integration. Includes honeypot spam protection, performance-optimized Vite build, and comprehensive technical proficiency showcase with filtering capabilities.",
     image: PROJECT_IMG_6,
-    githubUrl: "https://github.com/yourusername/portfolio",
-    liveUrl: "https://yourportfolio.com",
-    technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+    githubUrl: "https://github.com/sran4/PortFolio-Site",
+    liveUrl: "https://myportfolio.com",
+    technologies: [
+      "React 18",
+      "Vite",
+      "Tailwind CSS 3",
+      "Framer Motion",
+      "Embla Carousel",
+      "React Scroll",
+      "React Icons",
+      "EmailJS",
+    ],
   },
 ];

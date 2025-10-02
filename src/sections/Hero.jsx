@@ -16,17 +16,19 @@ const Hero = () => {
     <section id="hero" className="container mx-auto px-8">
       <div className="flex flex-col lg:flex-row gap-14 items-center justify-between mt-[80px]">
         <div className="order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0">
-          <h3 className="text-xl lg:text-2xl font-medium text-black dark:text-white">
-            👋 Hi, I&apos;m Sran Satwant
+          <h3 className="signature-font text-3xl lg:text-5xl font-medium text-black dark:text-white leading-snug">
+            👋 Hi, I&apos;m Sran
           </h3>
           <h1 className="w-full lg:w-[480px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] mt-3 bg-gradient-primary bg-clip-text text-transparent">
             Building Scalable & User Centric Web Apps
           </h1>
 
           <p className="w-full lg:w-[500px] text-sm lg:text-base mt-4">
-            I&apos;m a passionate Full Stack Frontend Developer crafting
-            responsive, accessible, and dynamic web experiences using React,
-            Node.js, and TailwindCSS.
+            I&apos;m a passionate Full Stack Developer specializing in building
+            responsive, accessible, and dynamic web applications using modern
+            technologies like MERN, PERN, Django, Tailwind CSS, HTML5, and CSS3.
+            From frontend interfaces to backend APIs, I craft seamless user
+            experiences with a strong focus on performance and scalability.
           </p>
 
           <div className="flex justify-center lg:justify-start gap-4 md:gap-8 mt-6">
