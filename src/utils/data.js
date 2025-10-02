@@ -385,7 +385,7 @@ export const PROJECTS = [
       "A fully responsive portfolio website featuring dark/light mode toggle, smooth scroll navigation, animated hero section with floating tech icons, projects carousel with touch support, and contact form with EmailJS integration. Includes honeypot spam protection, performance-optimized Vite build, and comprehensive technical proficiency showcase with filtering capabilities.",
     image: PROJECT_IMG_6,
     githubUrl: "https://github.com/sran4/PortFolio-Site",
-    liveUrl: "https://myportfolio.com",
+    liveUrl: "https://port-folio-site-psi.vercel.app/",
     technologies: [
       "React 18",
       "Vite",
