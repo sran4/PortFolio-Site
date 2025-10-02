@@ -33,8 +33,9 @@ const Navbar = () => {
 
   useEffect(() => {
     const stored = localStorage.getItem("theme");
-    // Default to light mode unless user explicitly saved dark
-    if (stored === "dark") {
+    // Default to dark when no stored preference
+    const initial = stored ?? "dark";
+    if (initial === "dark") {
       document.documentElement.classList.add("dark");
       setTheme("dark");
     } else {

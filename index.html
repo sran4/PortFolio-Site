@@ -5,6 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sran's Portfolio Site</title>
+    <script>
+      // Prevent theme flash: default to dark unless user saved preference
+      try {
+        var stored = localStorage.getItem("theme");
+        if (!stored || stored === "dark") {
+          document.documentElement.classList.add("dark");
+        }
+      } catch (_) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

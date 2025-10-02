@@ -9,13 +9,25 @@ const ProjecCard = ({
   // Use technologies if available, otherwise fall back to tags, or empty array
   const displayTags = technologies || tags || [];
 
+  // Derive alternative formats from conventional naming (same base name)
+  const basePath = imgUrl.replace(/\.(png|jpe?g|webp|avif)$/i, "");
+  const avifUrl = `${basePath}.avif`;
+  const webpUrl = `${basePath}.webp`;
+
   return (
     <div className="h-full bg-white dark:bg-[#121212] rounded-xl overflow-hidden shadow-md mx-2">
-      <img
-        src={imgUrl}
-        alt={title}
-        className="w-full h-72 md:h-80 object-cover"
-      />
+      <picture>
+        <source srcSet={avifUrl} type="image/avif" />
+        <source srcSet={webpUrl} type="image/webp" />
+        <img
+          src={webpUrl}
+          alt={title}
+          className="w-full h-72 md:h-80 object-cover"
+          loading="lazy"
+          decoding="async"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
+      </picture>
 
       <div className="px-4 py-5">
         <h3 className="text-base font-semibold line-clamp-2 overflow-hidden text-ellipsis">

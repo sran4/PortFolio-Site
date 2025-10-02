@@ -23,6 +23,7 @@ Modern, responsive portfolio built with React, Vite, and Tailwind CSS. It showca
   - EmailJS integration (no backend required)
   - Honeypot field and minimum submit time to mitigate spam
 - Performance-friendly Vite dev/build tooling
+- Automatic image optimization (AVIF/WebP) with PNG fallback
 
 ### Getting Started
 
@@ -42,6 +43,30 @@ Modern, responsive portfolio built with React, Vite, and Tailwind CSS. It showca
    ```bash
    npm run preview
    ```
+
+### Image Optimization
+
+Project screenshots under `src/assets/projectsImgs` are automatically converted to AVIF and WebP using `sharp`.
+
+- Convert (or reconvert) images:
+  ```bash
+  npm run images:convert
+  ```
+- Components load images via a `<picture>` element to prefer AVIF/WebP with PNG fallback. No import changes needed—just drop PNGs in the folder; the script generates matching `.webp` and `.avif` files.
+
+### Build Optimizations
+
+- Vendor splitting for `react`/`react-dom` to improve browser caching.
+- CSS code splitting, no sourcemaps in prod, and modern target (`es2019`).
+- Lazy loading and async decoding for project images.
+
+### Deploy
+
+- Output directory: `dist/`
+- Common hosts:
+  - Vercel: Import the repo; framework preset: Vite. Output: `dist`.
+  - Netlify: Build command `npm run build`, publish directory `dist`.
+  - GitHub Pages: `npm run build` then push `dist` to `gh-pages` branch (or use CI action).
 
 ### Configuration
 

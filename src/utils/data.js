@@ -20,12 +20,12 @@ import {
 import { FaGitAlt } from "react-icons/fa6";
 import { MdGroups3 } from "react-icons/md";
 
-import PROJECT_IMG_1 from "../assets/projectsImgs/inv-analytic.png";
-import PROJECT_IMG_2 from "../assets/projectsImgs/nextCart.png";
-import PROJECT_IMG_3 from "../assets/projectsImgs/inv-dashboard.png";
-import PROJECT_IMG_4 from "../assets/projectsImgs/bomCalc.png";
-import PROJECT_IMG_5 from "../assets/projectsImgs/MPICreator.png";
-import PROJECT_IMG_6 from "../assets/projectsImgs/portfolio.png";
+import PROJECT_IMG_1 from "../assets/projectsImgs/inv-analytic.avif";
+import PROJECT_IMG_2 from "../assets/projectsImgs/nextCart.avif";
+import PROJECT_IMG_3 from "../assets/projectsImgs/inv-dashboard.avif";
+import PROJECT_IMG_4 from "../assets/projectsImgs/bomCalc.avif";
+import PROJECT_IMG_5 from "../assets/projectsImgs/MPICreator.avif";
+import PROJECT_IMG_6 from "../assets/projectsImgs/portfolio.avif";
 
 export const MENU_LINKS = [
   { id: "01", label: "Home", offset: -100, to: "hero" },
