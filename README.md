@@ -1,4 +1,4 @@
-## Sran's Portfolio Website
+## Portfolio Website
 
 Modern, responsive portfolio built with React, Vite, and Tailwind CSS. It showcases projects, skills, and contact information with smooth interactions and a clean aesthetic.
 
