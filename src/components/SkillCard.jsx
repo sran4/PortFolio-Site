@@ -23,7 +23,7 @@ const SkillCard = ({ icon, skillName, description, progress }) => {
         </div>
       </div>
 
-      <p className="text-xs text-gray-600 dark:text-gray-300 text-justify leading-5 mt-2">
+      <p className="text-xs text-gray-600 dark:text-gray-300 leading-5 mt-2">
         {description}
       </p>
     </div>
