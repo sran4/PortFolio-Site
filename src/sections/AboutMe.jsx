@@ -119,7 +119,7 @@ const AboutMe = () => {
         </div>
 
         <div className="flex-1">
-          <p className="text-sm text-justify leading-6 whitespace-pre-line">
+          <p className="text-sm leading-6 whitespace-pre-line">
             {ABOUT_ME.content}
           </p>
 
