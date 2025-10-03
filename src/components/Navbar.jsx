@@ -58,7 +58,7 @@ const Navbar = () => {
   return (
     <nav className="container mx-auto sticky top-5 z-10">
       <div className="flex items-center justify-between rounded-full bg-white/25 dark:bg-white/10 border border-[#fee6cc] dark:border-white/10 backdrop-blur-[10px] m-5 p-3 md:p-0">
-        <div className="ml-2 md:ml-6 -mb-1">
+        <div className="ml-1 md:ml-6 -mb-1">
           <span className="text-3xl md:text-2xl font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
             Sran.dev
           </span>
@@ -66,7 +66,7 @@ const Navbar = () => {
 
         {/* Hamburger Icon (Visible only on small screens) */}
         <button
-          className="block md:hidden text-[#333] dark:text-white mr-4 focus:outline-none"
+          className="block md:hidden text-[#333] dark:text-white mr-2 focus:outline-none"
           onClick={toggleMenu}
         >
           <svg
@@ -117,7 +117,7 @@ const Navbar = () => {
         </ul>
 
         {/* Theme Toggle + Hire Me */}
-        <div className="flex items-center gap-2 pr-2 md:pr-3">
+        <div className="flex items-center gap-1 md:gap-2 pr-1 md:pr-3">
           <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
@@ -130,7 +130,7 @@ const Navbar = () => {
             smooth
             spy
             offset={-80}
-            className="inline-flex items-center justify-center h-10 md:h-12 text-[14px] md:text-[15px] font-medium text-white bg-gradient-primary rounded-full px-4 md:px-9 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer whitespace-nowrap"
+            className="inline-flex items-center justify-center h-10 md:h-12 text-[14px] md:text-[15px] font-medium text-white bg-gradient-primary rounded-full px-2 md:px-9 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer whitespace-nowrap"
           >
             Hire Me
           </Link>
