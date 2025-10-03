@@ -130,7 +130,7 @@ const Navbar = () => {
             smooth
             spy
             offset={-80}
-            className="inline-flex items-center justify-center h-12 text-[15px] font-medium text-white bg-gradient-primary rounded-full px-9 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer whitespace-nowrap"
+            className="inline-flex items-center justify-center h-12 text-[15px] font-medium text-white bg-gradient-primary rounded-full px-4 md:px-9 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer whitespace-nowrap"
           >
             Hire Me
           </Link>
