@@ -22,7 +22,7 @@ import { MdGroups3 } from "react-icons/md";
 
 import PROJECT_IMG_1 from "../assets/projectsImgs/inv-analytic.avif";
 import PROJECT_IMG_2 from "../assets/projectsImgs/nextCart.avif";
-import PROJECT_IMG_3 from "../assets/projectsImgs/inv-dashboard.avif";
+import PROJECT_IMG_3 from "../assets/projectsImgs/netflix.png";
 import PROJECT_IMG_4 from "../assets/projectsImgs/bomCalc.avif";
 import PROJECT_IMG_5 from "../assets/projectsImgs/MPICreator.avif";
 import PROJECT_IMG_6 from "../assets/projectsImgs/portfolio.avif";
@@ -36,9 +36,9 @@ export const MENU_LINKS = [
 ];
 
 export const STATS = [
-  { id: "01", count: "5+", label: `Years of \nExperience` },
-  { id: "02", count: "5", label: `Certifications \nEarned` },
-  { id: "03", count: "50+", label: `Projects \nCompleted` },
+  { id: "01", count: "5+", label: "Years of Experience" },
+  { id: "02", count: "5", label: "Certifications Earned" },
+  { id: "03", count: "50+", label: "Projects Completed" },
 ];
 
 export const SKILL_TABS = [
@@ -328,13 +328,24 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    title: "Task Management Dashboard",
+    title:
+      "Netflix Clone | React, Zustand, Render, Axios, React Router DOM, MongoDB, Tailwind CSS, cors, TMDB API",
     description:
       "Created a collaborative task management tool with drag-and-drop functionality, team collaboration features, and real-time notifications. Includes project tracking, deadline management, and progress visualization.",
     image: PROJECT_IMG_3,
-    githubUrl: "https://github.com/yourusername/task-manager",
-    liveUrl: "https://yourtaskmanager.com",
-    technologies: ["React", "Socket.io", "MongoDB", "Material-UI"],
+    githubUrl: "https://github.com/sran4/mern-netflix-clone",
+    liveUrl: "https://netflix-clone-production-894e.up.railway.app/",
+    technologies: [
+      "React",
+      "Zustand",
+      "Render",
+      "Axios",
+      "React Router DOM",
+      "MongoDB",
+      "Tailwind CSS",
+      "cors",
+      "TMDB API",
+    ],
   },
   {
     id: 4,
