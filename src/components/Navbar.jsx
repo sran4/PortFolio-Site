@@ -58,9 +58,9 @@ const Navbar = () => {
   return (
     <nav className="container mx-auto sticky top-5 z-10">
       <div className="flex items-center justify-between rounded-full bg-white/25 dark:bg-white/10 border border-[#fee6cc] dark:border-white/10 backdrop-blur-[10px] m-5 p-3 md:p-0">
-        <div className="ml-3 md:ml-6 -mb-1">
+        <div className="ml-2 md:ml-6 -mb-1">
           <span className="text-3xl md:text-2xl font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
-            sran.dev
+            Sran.dev
           </span>
         </div>
 
@@ -117,7 +117,7 @@ const Navbar = () => {
         </ul>
 
         {/* Theme Toggle + Hire Me */}
-        <div className="flex items-center gap-2 pr-3">
+        <div className="flex items-center gap-2 pr-2 md:pr-3">
           <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
