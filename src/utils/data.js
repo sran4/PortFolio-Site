@@ -22,7 +22,7 @@ import { MdGroups3 } from "react-icons/md";
 
 import PROJECT_IMG_1 from "../assets/projectsImgs/inv-analytic.avif";
 import PROJECT_IMG_2 from "../assets/projectsImgs/nextCart.avif";
-import PROJECT_IMG_3 from "../assets/projectsImgs/netflix.png";
+import PROJECT_IMG_3 from "../assets/projectsImgs/netflix.avif";
 import PROJECT_IMG_4 from "../assets/projectsImgs/bomCalc.avif";
 import PROJECT_IMG_5 from "../assets/projectsImgs/MPICreator.avif";
 import PROJECT_IMG_6 from "../assets/projectsImgs/portfolio.avif";
@@ -331,7 +331,7 @@ export const PROJECTS = [
     title:
       "Netflix Clone | React, Zustand, Render, Axios, React Router DOM, MongoDB, Tailwind CSS, cors, TMDB API",
     description:
-      "Created a collaborative task management tool with drag-and-drop functionality, team collaboration features, and real-time notifications. Includes project tracking, deadline management, and progress visualization.",
+      "A full-stack Netflix clone built with React frontend and Node.js backend. Features user authentication, movie browsing, search functionality, and personalized recommendations using TMDB API. Includes responsive design, state management with Zustand, and seamless user experience.",
     image: PROJECT_IMG_3,
     githubUrl: "https://github.com/sran4/mern-netflix-clone",
     liveUrl: "https://netflix-clone-production-894e.up.railway.app/",
