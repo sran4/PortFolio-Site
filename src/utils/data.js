@@ -26,6 +26,7 @@ import PROJECT_IMG_3 from "../assets/projectsImgs/netflix.avif";
 import PROJECT_IMG_4 from "../assets/projectsImgs/bomCalc.avif";
 import PROJECT_IMG_5 from "../assets/projectsImgs/MPICreator.avif";
 import PROJECT_IMG_6 from "../assets/projectsImgs/portfolio.avif";
+import PROJECT_IMG_7 from "../assets/projectsImgs/chatApp.avif";
 
 export const MENU_LINKS = [
   { id: "01", label: "Home", offset: -100, to: "hero" },
@@ -414,18 +415,18 @@ export const PROJECTS = [
       "MERN Stack Real-Time Chat Application| React 18,socket.io,Zustand,React Router DOM, Vite, Tailwind CSS",
     description:
       "A modern, full-stack real-time chat application built with the MERN stack, featuring instant messaging, user authentication, and real-time updates.",
-    image: PROJECT_IMG_6,
+    image: PROJECT_IMG_7,
     githubUrl: "https://github.com/sran4/chat-app",
     liveUrl: "https://chat-app-six-livid-43.vercel.app/",
     technologies: [
       "React 18",
+      "socket.io",
+      "Zustand",
+      "React Router DOM",
+      "React Hot Toast",
+      "DaisyUI",
       "Vite",
       "Tailwind CSS 3",
-      "Framer Motion",
-      "Embla Carousel",
-      "React Scroll",
-      "React Icons",
-      "EmailJS",
     ],
   },
 ];
