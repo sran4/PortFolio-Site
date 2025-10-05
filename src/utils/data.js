@@ -408,4 +408,24 @@ export const PROJECTS = [
       "EmailJS",
     ],
   },
+  {
+    id: 7,
+    title:
+      "MERN Stack Real-Time Chat Application| React 18,socket.io,Zustand,React Router DOM, Vite, Tailwind CSS",
+    description:
+      "A modern, full-stack real-time chat application built with the MERN stack, featuring instant messaging, user authentication, and real-time updates.",
+    image: PROJECT_IMG_6,
+    githubUrl: "https://github.com/sran4/chat-app",
+    liveUrl: "https://chat-app-six-livid-43.vercel.app/",
+    technologies: [
+      "React 18",
+      "Vite",
+      "Tailwind CSS 3",
+      "Framer Motion",
+      "Embla Carousel",
+      "React Scroll",
+      "React Icons",
+      "EmailJS",
+    ],
+  },
 ];
