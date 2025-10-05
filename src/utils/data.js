@@ -421,6 +421,8 @@ export const PROJECTS = [
     technologies: [
       "React 18",
       "socket.io",
+      "Backend Render Server",
+      "Frontend Vercel Server",
       "Zustand",
       "React Router DOM",
       "React Hot Toast",
