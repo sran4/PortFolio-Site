@@ -41,9 +41,13 @@ const Hero = () => {
             >
               View My Work
             </Link>
-            <button className="flex-1 md:flex-none action-btn btn-scale-anim">
+            <a
+              href="/my-resume.pdf"
+              download="Sran_Resume.pdf"
+              className="flex-1 md:flex-none action-btn btn-scale-anim text-center"
+            >
               Download Resume
-            </button>
+            </a>
           </div>
         </div>
         {/* Avatar container with floating icons - larger container to accommodate all icons */}
